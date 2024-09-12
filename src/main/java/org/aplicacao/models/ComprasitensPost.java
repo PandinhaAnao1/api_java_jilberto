@@ -12,7 +12,7 @@ public class ComprasitensPost {
     private String data_lancamento;
 
 
-    public ComprasitensPost(float valor, int erp_produtos_id, int erp_compras_id, int qtd, String data_lancamento){
+    public ComprasitensPost(float valor, int erp_produtos_id, int qtd, int erp_compras_id, String data_lancamento){
         this.valor = valor;
         this.erp_produtos_id = erp_produtos_id;
         this.qtd = qtd;

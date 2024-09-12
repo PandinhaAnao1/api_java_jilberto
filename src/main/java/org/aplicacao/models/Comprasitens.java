@@ -14,6 +14,14 @@ public class Comprasitens {
     private int erp_compras_id;
     private String data_lancamento;
 
+    public Comprasitens(float valor, int erp_produtos_id, int qtd, int erp_compras_id, String data_lancamento) {
+        this.valor = valor;
+        this.erp_produtos_id = erp_produtos_id;
+        this.qtd = qtd;
+        this.erp_compras_id = erp_compras_id;
+        this.data_lancamento = data_lancamento;
+    }
+
 
     public int getId() {
         return id;
@@ -64,13 +72,13 @@ public class Comprasitens {
     }
     @Override
     public String toString() {
-        return "Comprasitens{" +
-                "id=" + id +
-                ", valor=" + valor +
-                ", erp_produtos_id=" + erp_produtos_id +
-                ", qtd=" + qtd +
-                ", erp_compras_id=" + erp_compras_id +
-                ", data_lancamento='" + data_lancamento + '\'' +
+        return "Comprasitens{\n" +
+                "id: " + id + "\n" +
+                "valor: " + valor + "\n" +
+                "erp_produtos_id: " + erp_produtos_id + "\n" +
+                "qtd: " + qtd + "\n" +
+                "erp_compras_id: " + erp_compras_id + "\n" +
+                "data_lancamento: '" + data_lancamento + '\'' + "\n" +
                 '}';
     }
 
